@@ -1,0 +1,94 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px
+}
+
+.img-inline {
+    display: inline-block;
+    height: 1.8em; /* Matches the height of the text */
+    width: auto; /* Maintains the aspect ratio */
+    margin-left: 3px; /* Space between text and image */
+    vertical-align: middle; /* Aligns the image with the text */
+}
+
+.img-inline1 {
+    display: inline-block;
+    height: 2.8em; /* Matches the height of the text */
+    width: auto; /* Maintains the aspect ratio */
+    margin-left: 3px; /* Space between text and image */
+    vertical-align: middle; /* Aligns the image with the text */
+}
+
+/*Showcase*/
+section {
+    width: 100%;
+    height: auto; /* Allows the section to grow based on its content */
+}
+
+.bg-image {
+    background-image: url('Black\ Yellow\ Bold\ Bag\ Fashion\ Sale\ Banner\ \(1\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensures the image does not repeat */
+}
+
+/*Newsletter*/
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0.3s ease-in-out;
+    border-radius: 20px
+}
+
+.product-image:hover {
+    transform: scale(1.15); /* Scale up the image by 10% on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); 
+}
+
+.nav-item:hover {
+    transform: scale(1.02); /* Scale up the image by 10% on hover */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    padding: 5px 
+}
+
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+    margin: 10px auto; /* Centers cards within columns */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.card-text, .product-title {
+    margin: 20px 0;
+}
+
+.card {
+    margin:  auto;
+}
+
+.img-logo {
+    display: inline-block;
+    height: 10.0em; /* Matches the height of the text */
+    width: auto; /* Maintains the aspect ratio */
+    margin-left: 15px; /* Space between text and image */
+    vertical-align: middle; /* Aligns the image with the text */
+}
+
+.custom-container {
+    max-width: 1650px; /* Set maximum width */
+    margin-left: auto; /* Center align by setting left margin auto */
+    margin-right: auto; /* Center align by setting right margin auto */
+    padding: 20px; /* Optional: Add padding */
+}
